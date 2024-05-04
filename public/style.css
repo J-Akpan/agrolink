@@ -1,0 +1,118 @@
+.header {
+    float: left;
+    width: 100%;
+    height: aut0;
+    background-color: green;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.nav {
+    width: auto;
+    height: auto;
+    font-size: 17px;
+    color: white;
+    float: left;
+    margin: 50px;
+}
+
+.login {
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login a {
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    border: solid thin;
+    padding: 7px;
+}
+
+.login a:hover {
+    color: rgb(85, 134, 11);
+    background-color: antiquewhite;
+}
+
+.menu {
+    float: left;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.menu a {
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.menu a:hover {
+    color: rgb(85, 134, 11);
+    background-color: antiquewhite;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgb(223, 236, 204);
+    height: auto;
+    background-color: rgb(80, 122, 80);
+    font-size: 20px;
+}
+
+.details {
+    padding: 10px;
+    text-align: center;
+    width: 85rem;
+}
+
+.f-logo {
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+.contacts {
+    padding: 10px;
+    text-align: center;
+    width: 800px;
+}
+
+.links {
+    padding: 10px;
+    text-align: center;
+}
+
+.links img {
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.copyright {
+    width: 100%;
+    height: auto;
+}
