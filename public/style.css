@@ -150,6 +150,43 @@
 
 .category {
     display: flex;
-    flex-direction: column;
-    position: absolute;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.category div {
+    background-color: rgb(6, 29, 6);
+    width: 200px;
+    height: 200px;
+    margin-top: -220px;
+    border-radius: 50%;
+    border: solid white thick;
+}
+
+.fruits {
+    background-image: url('/pic/fruits3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.livestock {
+    background-image: url('/pic/livestock3.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grain {
+    background-image: url('/pic/grainbag.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tuber {
+    background-image: url('/pic/tuber.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
