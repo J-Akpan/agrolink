@@ -55,6 +55,25 @@ app.get('/', (req, res) => {
 
 })
 
+// route to the login page
+app.get('/login', (req, res) => {
+    res.render('login')
+
+})
+
+// route to the signup page
+app.get('/signup', (req, res) => {
+    res.render('sign-up-form')
+
+})
+
+// route to the profile page
+app.post('/userpage', (req, res) => {
+    res.render('userpage')
+
+})
+
+
 
 
 // serving a static folder.
