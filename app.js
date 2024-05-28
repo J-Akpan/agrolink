@@ -1,33 +1,28 @@
 const express = require('express')
 const path = require('path')
-const pg = require('pg')
-const postgres = require('postgres')
+const { Sequelize } = require('sequelize');
+
+// const pg = require('pg')
+// const postgres = require('postgres')
+
 const bodyParser = require('body-parser')
 const { engine } = require('express-handlebars');
 
 const PORT = process.env.PORT || 5000
 
+const sequelize = new Sequelize('agrolink', 'root', 'Akpan123', 
+{
+  host: 'localhost',
+  dialect: 'mysql'
+});
 
+sequelize.authenticate()
+    .then(()=>{
+        console.log("Connection to database is succefull")
+    }).catch((err)=>{
+        console.log(err)
+    })
 
-const db = new pg.Pool({
-    host: "localhost",
-    user: "Akpan",
-    port: "5432",
-    password: "Akpan08169625557",
-    database: "agrolink"
-
-})
-
-
-//connection to database
-
-db.connect((err) => {
-    if (err) {
-        console.log(`error in db connection ${err}`)
-    } else {
-        console.log(`Database succesfully connected`)
-    }
-})
 
 
 //server app creation
